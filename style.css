@@ -371,7 +371,7 @@
 }
 
 .foot-page img:hover {
-    animation: girar 2s infinite linear;
+    animation: girar 2s linear;
 }
 
 
