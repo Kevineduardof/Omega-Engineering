@@ -19,6 +19,7 @@
         url(img/engenharia.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 85vh;
     display: flex;
     justify-content: space-around;
@@ -205,6 +206,7 @@
     align-items: center;
     color: white;
     font-weight: bold;
+    background-attachment: fixed;
 }
 
 .local-geo {
