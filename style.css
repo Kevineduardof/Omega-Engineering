@@ -1,7 +1,9 @@
+/* #region Definição de Variáveis e Reset de Código CSS*/
 :root {
     --primary-color: rgb(255, 174, 46);
     --secundary-color: black;
 }
+
 
 * {
     margin: 0;
@@ -9,12 +11,14 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+/* #endregion */
 
-.img-logo {
+/* #region Parte de Cima da Página */
+#img-logo {
     display: none;
 }
 
-.start-of-page {
+#start-of-page {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
         url(img/engenharia.jpg);
     background-size: cover;
@@ -27,7 +31,7 @@
     color: white;
 }
 
-.principal-text h2 {
+#principal-text h2 {
     color: var(--primary-color);
     text-decoration: underline;
     font-size: 3em;
@@ -35,26 +39,26 @@
     margin-bottom: 1em;
 }
 
-.principal-text .company-description {
+#principal-text #company-description {
     color: white;
     font-size: 25px;
     max-width: 500px;
     font-weight: bold;
 }
 
-.principal-text span {
+#principal-text span {
     color: var(--primary-color);
     text-decoration: underline;
 }
 
-.principal-form {
+#principal-form {
     background-color: var(--primary-color);
     padding: 3em;
     max-width: 22%;
     border-radius: 6px;
 }
 
-.principal-form form{
+#principal-form form{
     display: flex;
     flex-direction: column;
 }
@@ -68,7 +72,7 @@
     padding: 5px;
 }
 
-.principal-form p{
+#principal-form p{
     font-size: 1.5em;
     color: white;
     margin-bottom: 1em;
@@ -81,11 +85,11 @@
     margin-bottom: 1em;
 }
 
-.init-form label {
+#init-form label {
     font-weight: bold;
 }
 
-.button-primary {
+#button-primary {
     color: black;
     background-color: orange;
     padding: 1em;
@@ -99,11 +103,14 @@
     align-self:center;
 }
 
-.button-primary:hover {
+#button-primary:hover {
     transform: scale(1.1);
 }
 
-.mid-page h1{
+/* #endregion */
+
+/* #region Parte do Meio da Páginas */
+#mid-page h1{
     font-size: 3em;
     padding: 1em;
     display: flex;
@@ -113,7 +120,7 @@
     overflow:hidden;
 }
 
-.all-values {
+#all-values {
     display: flex;
     justify-content: space-around;
     padding: 4em;
@@ -134,7 +141,7 @@
     text-transform: uppercase;
 }
 
-.values .img-mid-1 {
+.values #img-mid-1 {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -144,7 +151,7 @@
     margin-top: 2em;
 }
 
-.values .img-mid-2 {
+.values #img-mid-2 {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -154,7 +161,7 @@
     margin-top: 2em;
 }
 
-.values .img-mid-3 {
+.values #img-mid-3 {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -164,38 +171,38 @@
     margin-top: 2em;
 }
 
-.values .img-mid-1:hover {
+.values #img-mid-1:hover {
     transform: scale(1.1);
     transition: 2s;
 }
 
-.values .img-mid-2:hover {
+.values #img-mid-2:hover {
     transform: scale(1.1);
     transition: 2s;
 }
 
-.values .img-mid-3:hover {
+.values #img-mid-3:hover {
     transform: scale(1.1);
     transition: 2s;
 }
 
-.img-mid-1 {
+#img-mid-1 {
     background-image: url(img/Aperto-de-mãos.jpeg);
     border: 3px solid var(--primary-color)
 }
 
-.img-mid-2 {
+#img-mid-2 {
     background-image: url(img/Seguranca.jpeg);
     border: 3px solid var(--primary-color)
 }
 
-.img-mid-3 {
+#img-mid-3 {
     background-image: url(img/produtividade.jpg);
     border: 3px solid var(--primary-color);
 }
 
 
-.local {
+#local {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
         url(img/localidade.jpg);
     background-size: cover;
@@ -209,50 +216,53 @@
     background-attachment: fixed;
 }
 
-.local-geo {
+#local-geo {
     display: flex;
     text-align: center;
     justify-content: center;
     padding-right: 2em;
 }
 
-.local-geo i {
+#local-geo i {
     color: var(--primary-color);
     font-size: 4em;
     margin-right: 1em;
 }
 
-.engineering-location {
+#engineering-location {
     text-align: left;
     font-size: 1.5em;
 }
 
-.sobre-a-engenharia {
+#sobre-a-engenharia {
     max-width: 30%;
 }
 
-.sobre-a-engenharia h3 {
+#sobre-a-engenharia h3 {
     text-transform: uppercase;
     font-size: 2em;
     margin-bottom: 0.5em;
     color: var(--primary-color)
 }
 
-.sobre-a-engenharia p {
+#sobre-a-engenharia p {
     line-height: 1.4em;
 }
 
-.sobre-a-engenharia span {
+#sobre-a-engenharia span {
     color: var(--primary-color);
     text-decoration: underline;
 }
 
-.works {
+/* #endregion */
+
+/* #region Trabalhos Já Feitos Pela Engenharia */
+#works {
     background: linear-gradient(to right, var(--primary-color) 25%, white 150%);
     color: white;
 }
 
-.works h1 {
+#works h1 {
     font-size: 3em;
     padding: 1em;
     display: flex;
@@ -260,7 +270,7 @@
     overflow:hidden;
 }
 
-.all-works {
+#all-works {
     width: 80%;
     margin: 0 auto;
 
@@ -294,27 +304,29 @@
     padding-bottom: 5%;
 }
 
-.all-works p {
+#all-works p {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
     margin: 25px;
 }
 
-.all-works img {
+#all-works img {
     width: 50%;
     margin: 2%;
     border-radius: 25px;
     border: 2px solid black;
 }
 
-.all-works img:hover {
+#all-works img:hover {
     transform: scale(1.1);
     transition: 2s;
 }
 
+/* #endregion */
 
-.end-page {
+/* #region Fim da Página */
+#end-page {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
     url(img/final.jpg);
     background-size: cover;
@@ -328,27 +340,27 @@
     font-weight: bold;
 }
 
-.end-page h3 {
+#end-page h3 {
     margin-bottom: 2em;
 }
 
-.contatos {
+#contatos {
     display: flex;
     gap: 2em;
 }
 
-.contatos i {
+#contatos i {
     padding: 20px;
     background-color: var(--primary-color);
     border-radius: 40px;
     cursor: pointer;
 }
 
-.contatos i:hover {
+#contatos i:hover {
     transform: scale(1.1);
 }
 
-.foot-page {
+#foot-page {
     height: 200px;
     background-color:white;
     display: flex;
@@ -357,37 +369,40 @@
     align-items: center;
 }
 
-.foot-page p {
+#foot-page p {
     cursor: pointer;
     color: gray;
 }
 
-.direitos {
-    padding-bottom: 2em;
-}
 
-.foot-page img {
+#foot-page img {
     margin-bottom: 1em;
     width: 50px;
     height: 40px;
 }
 
-.foot-page img:hover {
+#foot-page img:hover {
     animation: girar 2s linear;
 }
 
+#direitos {
+    padding-bottom: 2em;
+}
 
+/* #endregion */
+
+/* #region Mediaquerys e Breakpoints */
 @media (max-width: 768px) {
 
-    .mid-page h1 {
+    #mid-page h1 {
         font-size: 1.5rem;
     }
 
-    .works {
+    #works {
         flex-direction: column;
     }
 
-    .works h1 {
+    #works h1 {
         font-size: 1.5rem;
         text-align: center;
     }
@@ -404,52 +419,60 @@
         flex-direction: column;
     }
 
-    .all-works figcaption {
+    #all-works figcaption {
         width: 300px;
     }
 
-    .all-works img {
+    #all-works img {
         width: 150%;
         margin: 2%;
         border-radius: 25px;
         border: 2px solid black;
     }
 
+    #work-1 img {
+        width: 100%;
+    }
+
+    #work-2 img {
+        width: 100%;
+    }
+
     #work-3 img {
         width: 90%;
     }
 
-    .contatos i {
+    #contatos i {
         padding: 1em;
     }
 
-    .end-page h3 {
+    #end-page h3 {
         text-align: center;
     }
 
-    .foot-page {
+    #foot-page {
         margin-top: 2em;
     }
 
-    .foot-page p {
+    #foot-page p {
         text-align: center;
         color: gray;
         margin: 0px 5px 0 5px;
     }
 
-    .all-works img:hover {
+    #all-works img:hover {
         transform: scale(1.0);
     }
 }
 
 @media(max-width: 770px) {
-    .all-works img:hover {
+    #all-works img:hover {
         transform: scale(1.0);
     }
 }
 
 @media (max-width: 1024px) {
-    .img-logo {
+    #img-logo {
         width: 20px;
         height: 20px;
         display: flex;
@@ -457,27 +480,27 @@
         margin-bottom: 20px;
     }
 
-    .start-of-page {
+    #start-of-page {
         flex-direction: column;
         text-align: center;
         height: 50%;
     }
 
-    .start-of-page h2 {
+    #start-of-page h2 {
         font-size: 1.5em;
     }
 
-    .principal-form {
+    #principal-form {
         margin: 10px;
         max-width: 100%;
     }
 
-    .local {
+    #local {
         flex-direction: column;
         height: 100%;
     }
 
-    .local-geo {
+    #local-geo {
         flex-direction: column;
         justify-content: center;
         margin-bottom: 2em;
@@ -485,12 +508,12 @@
         padding-right: 0;
     }
 
-    .local-geo i {
+    #local-geo i {
         margin: 0.5em 0 0.4em 0;
         padding: 0;
     }
 
-    .sobre-a-engenharia {
+    #sobre-a-engenharia {
         max-width: 80%;
         margin: 1em;;
         flex-direction: column;
@@ -504,15 +527,26 @@
 
 @media (max-width: 1150px) {
 
-    .all-values {
+    #all-values {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .values .img-mid {
+    .values #img-mid {
         margin-top: 3em;
+    }
+}
+
+@media (max-width: 425px) {
+
+    #work-1 img {
+        width: 150%;
+    }
+
+    #work-2 img {
+        width: 150%;
     }
 }
 
@@ -524,3 +558,5 @@
         transform: rotate(360deg);
     }
 }
+
+/* #endregion */
